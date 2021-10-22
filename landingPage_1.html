@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c2253">
+  <meta property="og:type" content="website">
+  <title>MulanOfTech</title>
+  <style>
+    h1, h2, body, ul, li {
+      font-weight: normal;
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+    .container {
+      background-image: linear-gradient(to top, #7ed483 0%, #399f3a 100%);
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+      padding: 25px;
+      margin: 25px auto;
+      width: 60%;
+    }
+    h1 {
+      border: 1px solid #7ed483;
+      padding: 15px;
+      font-weight: bold;
+    }
+    h2 {
+      font-weight: bold;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+      border-radius: 5px;
+      width: 70%;
+    }
+    p, span {
+      font-size: 1.4em;
+      line-height: 1.3;
+    }
+    a {
+      color: #fff;
+      float: left;
+    }
+
+    .tryButton {
+      background: rgb(94, 87, 87, 0.8);
+      border: 0px;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 30px 10px;
+      color: #fff;
+      font-size: x-large;
+      box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>I live by Green Tea</h1>
+  <h2>Especially Matcha Green Tea</h2>
+  <hr>
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/421/original/matcha-latte.jpg?1633624052" alt="a freshly brewed cup of matcha green tea" />
+  <hr>
+  <p>
+    
+    "Over the past few years, <strong>matcha</strong> has grown in popularity because of its bright green color, health benefits, and the fact
+    that it makes for a lovely latte. Matcha is part of the green tea family, but it's unique. Unlike traditional forms of
+    green tea where you steep leaves in water, matcha is the powder made from ground-up tea leaves. Because of this, when
+    you consume matcha, you're getting a higher concentration of the leaves' nutrients (translation: more benefits).
+  </p>
+  <span>
+    These days, you can pretty much find it at any American coffee shop. But matcha’s rich history dates back to the twelfth
+    century and has been an important component of <em>Japanese</em> tea culture for more than 800 years."
+  </span>
+  <br />
+  <br />
+  <small>
+    <a href="https://www.womenshealthmag.com/food/a27127259/matcha-powder-benefits/">
+      Read about its benefits here
+      </a>
+  </small>
+  <br>
+  <button class="tryButton">Try Matcha Green Tea</button>
+  </div>
+  <script>
+    function haveYouTried() {
+      let name = prompt("Hello, what is your name?")
+      let answer = prompt("Have you ever tried Matcha Green Tea? ( y / n )");
+      if(answer === "y") {
+        alert(name + ", keep up the good health!")
+      } else {
+        alert(name + ", why not give it a try?")
+      }
+    }
+    let tryTeaButton = document.querySelector("button");
+    tryTeaButton.addEventListener("click", haveYouTried);
+  </script>
+</body>
